@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@emotion/react';
 import { ReactNode } from 'react';
+import { theme } from './constants';
 import { GlobalStyle } from './globalStyle';
-import { theme } from './theme';
 
 type Props = {
   children: ReactNode;
