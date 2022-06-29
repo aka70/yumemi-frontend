@@ -1,7 +1,7 @@
-import { css, Global } from '@emotion/react';
+import { css, Global, Theme, useTheme } from '@emotion/react';
 import emotionReset from 'emotion-reset';
 
-const globalStyle = () => css`
+const globalStyle = (theme: Theme) => css`
   ${emotionReset}
   *,
   *::after,
@@ -11,8 +11,8 @@ const globalStyle = () => css`
     -webkit-font-smoothing: antialiased;
   }
   body {
-    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-    color: #1f1f1f;
+    font-family: ${theme.fonts.fontFamily};
+    color: ${theme.colors.onBackground};
   }
   button,
   input,
@@ -32,5 +32,6 @@ const globalStyle = () => css`
 `;
 
 export const GlobalStyle = () => {
-  return <Global styles={globalStyle()} />;
+  const theme = useTheme();
+  return <Global styles={globalStyle(theme)} />;
 };
