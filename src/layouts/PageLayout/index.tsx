@@ -4,7 +4,7 @@ import { FallbackProps } from 'react-error-boundary';
 import { useNavigate } from 'react-router-dom';
 import { ApiClientBoundary } from '../../api/ApiClientBoundary';
 import { useApiClientInitializer } from '../../api/useApiClientInitializer';
-import { TopAppBar } from '../../libs/TopAppBar';
+import { TopAppBar } from '../../atoms/TopAppBar';
 import { route } from '../../routes/constants';
 import { ErrorFallback } from './ErrorFallBack';
 

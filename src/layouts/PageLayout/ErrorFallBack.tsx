@@ -1,8 +1,8 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { MdReplay } from 'react-icons/all';
-import { Button } from '../../libs/Button';
-import { Headline } from '../../libs/Headline';
+import { Button } from '../../atoms/Button';
+import { Headline } from '../../atoms/Headline';
 
 const ButtonContainer = styled.a`
   justify-self: center;

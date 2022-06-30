@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { ReactNode } from 'react';
-import { TopAppBar } from '../../libs/TopAppBar';
+import { TopAppBar } from '../../atoms/TopAppBar';
 
 const Wrapper = styled.div`
   div:first-of-type {

@@ -6,7 +6,7 @@ import { PopulationGraph } from './PopulationGraph';
 import { PrefectureSelector } from './PrefectureSelector';
 import { usePrefecturePopulations } from './usePrefecturePopulations';
 import { usePrefectureSelections } from './usePrefectureSelections';
-import { Headline } from '../../libs/Headline';
+import { Headline } from '../../atoms/Headline';
 import { PrefecturePopulation, PrefectureSelection } from '../../types';
 
 const Wrapper = styled.div`
